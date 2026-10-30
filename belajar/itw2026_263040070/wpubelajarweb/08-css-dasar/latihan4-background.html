@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan 4 - Background</title>
+  <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: "Courier New", Courier, monospace;
+      text-align: center;
+      color: #f0f0f0;
+      background-image: url(img/images.jpeg);
+      background-color: #12202e;
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+    }
+
+    .container {
+      max-width: 700px;
+      margin: 0 auto;
+      padding: 60px 20px;
+    }
+
+    h1 {
+      font-size: 42px;
+      font-style: italic;
+      letter-spacing: 5px;
+      margin-bottom: 40px;
+      background: linear-gradient(90deg, #4aa3ff, #a58bff);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      filter: drop-shadow(0 0 10px rgba(100, 150, 255, 0.6));
+    }
+
+    .kotak {
+      background: rgba(255, 255, 255, 0.12);
+      backdrop-filter: blur(6px);
+      border: 1px solid rgba(255, 255, 255, 0.18);
+      border-radius: 16px;
+      padding: 25px 30px;
+      box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    .kotak p {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.8;
+      margin: 8px 0;
+    }
+
+    /* kata yang disorot */
+    .sorot {
+      background: rgba(60, 115, 255, 0.35);
+      color: #4dd5ff;
+      padding: 0 6px;
+      border-radius: 4px;
+      text-shadow: 0 0 8px rgba(255, 60, 100, 0.8);
+    }
+
+    .penulis {
+      margin-top: 45px;
+      padding-top: 15px;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+      font-size: 11px;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      color: #9aa5b1;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <h1>FASE RUNTUH</h1>
+
+    <div class="kotak">
+      <p>"Tak perlu khawatir, ku hanya <span class="sorot">terluka</span>.</p>
+      <p>Terbiasa tuk pura-pura tertawa.</p>
+      <p>Namun bolekah sekali saja ku menangis?</p>
+      <p>Sebelum kembali membohongi diri."</p>
+    </div>
+
+    <div class="penulis">— FEBY PUTRI FEAT. FIERSA BESARI</div>
+  </div>
+
+</body>
+</html>
